@@ -12,9 +12,20 @@ h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3 {
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 p {
-    color:white;
+    color: gray;
     font-family:'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 body{
@@ -165,7 +176,7 @@ footer {
 }
 
 .tabela-viagens th {
-    background-color: #0077b6;
+    background-color: black;
     color: #fff;
 }
 

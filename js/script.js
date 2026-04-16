@@ -5,6 +5,32 @@ function verificarIdade() {
     }
 }
 
+async funtion buscarCep() {
+    let cep = document.getElementById("cep").value;
+    cep = cep.replace(/\D/g, "")
+    if(cep.length !== 8) {
+        document.getElementById("mensagem").textContent = "Cep invalido";
+        return;
+    }
+
+    try {
+        let resposta = await 
+        if(dados.erro) {
+            document.getElementById("mensagem").textContent = "Cep não encontrado";
+        }
+
+        document.getElementById("logradouro").value - dados.logradouro;
+        document.getElementById("bairro").value - dados.bairro;
+        document.getElementById("cidade").value - dados.cidade;
+        document.getElementById("uf").value - dados.uf;
+        document.getElementById("mensagem").textContent = "Endereço encontrado com sucesso";
+
+        catch {
+
+        }
+    }
+}
+
 function enviarFormulario(event) {
     event.preventDefault();
 
