@@ -5,11 +5,16 @@ h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+img {
+    border-radius: 10px;
+    max-width: 500%;
+}
+
 h2 {
     text-align: center;
     background-color: #000000;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
