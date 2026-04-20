@@ -7,7 +7,9 @@ h1 {
 
 img {
     border-radius: 10px;
-    max-width: 500%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
@@ -44,7 +46,8 @@ body{
 /* estilizar o figure */
 figure {
     margin: 0;
-    color: black
+    color: black;
+    text-align: center;
 }
 
 /* estilizando o cabeçalho */
@@ -56,7 +59,9 @@ header {
 }
 header img {
     display: block;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
 }
 /* Estilizar o menu */
 nav ul {
