@@ -6,6 +6,32 @@ function verificarIdade() {
     }
 }
 
+async function buscarCep() {
+    let cep = document.getElementById('cep').value;
+    cep = cep.replace(/\D/g, "");
+
+    if(cep.length !== 8){
+        document.getElementById("mensagem"). textcontent = "Cep invalido";
+        return;
+    }
+
+    try{
+        let resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        let dados = await resposta.json();
+        if(dados.erro){
+            document.getElementById("mensagem"). textcontent = "Cep nao encontrado";
+        }
+
+        document.getElementById("logradouro").value = dados. logradouro;
+        document.getElementById("bairro").value = dados. bairro;
+        document.getElementById("cidade").value = dados. cidade;
+        document.getElementById("uf").value = dados. uf;
+        document.getElementById("mensagem").textContent = "Endereço encontrado com sucesso";
+        } catch(erro) {
+            document.getElementById("mensagem").textContent = "Erro ao buscar cep";
+        }
+}
+
 function enviarFormulario(event){
     // a linha abaixo impede o recarregamento da página
     event.preventDefault();
