@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css2/style2.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="imagem/Copilot_20260420_165428.png">
@@ -13,11 +14,10 @@
 <body class="container">
   <header>
     <nav>
-            <a href="index2.html"><img src="imagem/Copilot_20260420_164513.png"></a>
+            <a href="index2.html"><img src="imagem/Copilot_20260420_164513.png" alt="Banner cadastro"></a>
         </nav>
     <h4>VENHA CONHECER O NOSSO CONTEUDO</h4>
 </header>
-  <script src="script2.js"></script>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
@@ -49,7 +49,8 @@
           </div>
         </div>
       </nav>
-      <h1>Local de cadastro</h1>
+      <main style="margin-top: 200px;">
+      <img src="imagem/ChatGPT Image 24 de abr. de 2026, 13_56_54.png" width="550px">
     <form action="#" onsubmit="enviarFormulario(event)" method="get" enctype="multipart/form-data">
         <!-- DADOS PESSOAIS -->
         <fieldset class="form-control mb-3">
@@ -57,7 +58,27 @@
             <label for="nome">Nome Completo</label>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome" title="Digite seu nome completo sem abreviações" class="form-control" required>
             <label for="idade">Idade</label>
-            <input type="tex" name="idade" id="idade" class="form-control" onchange="verificarIdade()" required>
+            <input type="text" name="idade" id="idade" class="form-control" onchange="verificarIdade()" required>
+
+            <label for="nome">Cep</label>
+            <input type="text" name="cep" id="cep" placeholder="Digite seu Cep" title="Digite seu Cep" class="form-control" required>
+            <br>
+            <button type="button" class="btn btn-secondary mt-2" onclick="buscarCep()">Buscar</button>
+            <br>
+
+            <label for="logradouro">Logradouro</label>
+            <input type="text" name="logradouro" id="logradouro" placeholder="Digite seu Logradouro" title="Digite seu logradouro" class="form-control" required>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" placeholder="Digite seu Bairro" title="Digite seu bairro" class="form-control" required>
+
+            <label for="cidade">cidade</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" title="Digite seu cidade" class="form-control" required>
+
+            <label for="uf">Uf</label>
+            <input type="text" name="uf" id="uf" placeholder="Digite seu uf" title="Digite seu uf" class="form-control" required>
+
+            <p id="mensagem"></p>
           </fieldset>
         <fieldset class="form-control mb-3">
             <legend>Contato</legend>
@@ -72,8 +93,10 @@
         <button class="btn btn-danger" type="reset">Limpar</button>
 
     </form>
+    </main>
+    <div id="resultado"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="js2/script2.js"></script>
 
     <footer> <!-- rodapé da página -->
         <div class="footer-container">
