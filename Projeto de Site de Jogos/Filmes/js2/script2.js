@@ -40,9 +40,6 @@ function enviarFormulario(event){
     let idade = document.getElementById("idade").value;
     let email = document.getElementById("email").value;
     let telefone = document.getElementById("telefone").value;
-    let destino = document.getElementById("destino").value;
-    let dtIda = document.getElementById("dataIda").value;
-    let dtVolta = document.getElementById("dataVolta").value;
 
     // selecionar uma div para exibir o resultado
     let resultado = document.getElementById("resultado");
@@ -55,8 +52,5 @@ function enviarFormulario(event){
             <p><strong>Idade:</strong> ${idade}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Telefone:</strong> ${telefone}</p>
-            <p><strong>Destino:</strong> ${destino}</p>
-            <p><strong>Data de ida:</strong> ${dtIda}</p>
-            <p><strong>Data de volta:</strong> ${dtVolta}</p>
     `;
 }
